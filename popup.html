@@ -3,11 +3,16 @@
   <head>
     <link rel="stylesheet" type="text/css" href="popup.css" />
   </head>
-  <body>
+  <body style="width: fit-content">
     <h1>Tab Closer</h1>
-    <p>Automatically closes YouTube tabs after a time = <span id="displayTime"></span>.</p>
-    <input type="number" id="timeInput" placeholder="Enter time in seconds" />
+    <p>Automatically closes tabs after <span id="displayTime"></span> seconds.</p>
+
+    <input type="number" id="timeInput" placeholder="Enter time in seconds" style="width: fit-content" /><br />
+
+    <input type="text" id="urlInput" placeholder="Enter URL " /><br /><br />
+
     <button id="startButton">Start</button>
+
     <script src="popup.js"></script>
   </body>
 </html>
