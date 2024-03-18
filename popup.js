@@ -11,5 +11,9 @@ document.getElementById("startButton").addEventListener("click", () => {
   localStorage.setItem("savedTime", timeInSeconds); // Save the time
   document.getElementById("displayTime").textContent = timeInSeconds;
   const closeAfterMs = timeInSeconds * 1000;
+
+  const url = document.getElementById("urlInput").value;
+
+  browser.runtime.sendMessage({ url });
   browser.runtime.sendMessage({ closeAfterMs });
 });
