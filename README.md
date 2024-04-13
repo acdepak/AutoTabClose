@@ -1,6 +1,6 @@
 # AutoTabClose
 
-Closes Tab with specified URL on a specified time.
+Closes Tab with specified URL after specified time.
 
 # How to add URLs
 
