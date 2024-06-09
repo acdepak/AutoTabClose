@@ -2,18 +2,17 @@
   "manifest_version": 2,
   "name": "tab-closer",
   "version": "1.0",
-
   "description": "closes the tab after certain time",
-
+  "icons": {
+    "48": "icons/creepyEye48.png"
+  },
+  "permissions": ["tabs", "activeTab", "storage", "webNavigation"],
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "48": "icons/border-48.png"
+      "48": "icons/creepyEye48.png"
     }
   },
-
-  "permissions": ["tabs", "activeTab", "storage", "webNavigation", "notifications", "contextMenus"],
-
   "background": {
     "scripts": ["specific-tab-closer.js"]
   }
